@@ -1,0 +1,67 @@
+﻿<Page x:Class="WpfApp.Pages.Linguistic"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp.Pages" 
+      xmlns:oxy="http://oxyplot.org/wpf" 
+      xmlns:h="https://handyorg.github.io/handycontrol"
+      xmlns:local1="clr-namespace:WpfApp"
+      xmlns:vmo="clr-namespace:WpfApp.ViewModels.Linguistic"
+      xmlns:vo="clr-namespace:WpfApp.Views.Linguistic"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Linguistic">
+
+    <Page.DataContext>
+        <vmo:LinguisticViewModel/>
+    </Page.DataContext>
+    
+    <Page.Resources>
+        <Style x:Key="WrappedColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
+            <Setter Property="ContentTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding}"></TextBlock>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top" 
+             Padding="10" 
+             HorizontalContentAlignment="Center" 
+             VerticalContentAlignment="Center">
+            <GroupBox Header="Тестирование" 
+                      Style="{StaticResource GroupBoxTab.Small}">
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Вычисление"
+                            Command="{Binding ActionEval}"
+                            Style="{StaticResource ButtonPrimary}"/>
+                    <Button Content="Фаззификация"
+                            Command="{Binding ActionTestFuzzification}"/>
+                    <Button Content="Агрегирование"
+                            Command="{Binding ActionTestAggregation}"/>
+                    <Button Content="Активизация"
+                            Command="{Binding ActionTestActive}"/>
+                    <Button Content="Аккумуляция"
+                            Command="{Binding ActionTestAccumulation}"/>
+                    <Button Content="Дефаззификация"
+                            Command="{Binding ActionTestUnFuzzification}"/>
+                    <Button Content="Синтаксический анализатор"
+                            Command="{Binding ActionTestSyntaxAnalizer}"/>
+                </StackPanel>
+
+            </GroupBox>
+        </ToolBar>
+        <StackPanel Orientation="Vertical">
+            <vo:DG_LinguisticVariables/>
+            <vo:DG_Rules/>
+        </StackPanel>
+        <oxy:PlotView Model="{Binding PlotVM.PlotModel}" 
+          Margin="10">
+        </oxy:PlotView>
+    </DockPanel>
+</Page>
