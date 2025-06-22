@@ -55,8 +55,10 @@ namespace WpfApp.ViewModels.Linguistic
                 item.RemoveTerm(vm.Name);
             Invoke(nameof(DG_Terms));
         }
+
         public bool Selected { get => _selected; set => SetProperty(ref _selected, value); }
         private bool _selected;
+
         public DataGridViewModel<LinguisticTermViewModel> DG_Terms { get; set; }
     }
 }

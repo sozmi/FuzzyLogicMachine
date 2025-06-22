@@ -1,0 +1,49 @@
+﻿using ClassLibraryFLM.Base;
+using ClassLibraryFLM.FuzzyLogic.Base;
+
+namespace ClassLibraryFLM.FuzzyLogic.Production
+{
+    /// <summary>
+    /// Формирует массив входных переменных
+    /// </summary>
+    public class OutputManager : ITestList<Pair<Variable, List<InputParam>>>
+    {
+        public static Pair<Variable, List<InputParam>> TestCar()
+        {
+            Variable cost = BaseRules.Obj().GetLinguisticVariable("Стоимость") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable expenses = BaseRules.Obj().GetLinguisticVariable("Эксплуатационные расходы") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable reliability = BaseRules.Obj().GetLinguisticVariable("Надежность") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable solution = BaseRules.Obj().GetLinguisticVariable("Решение") ?? throw new NullReferenceException("Заполните базу правил");
+            List<InputParam> inputs = [
+            new("Toyota Yaris", [new(cost, 350), new(expenses, 5), new(reliability, 0.90)]),
+            new("ВАЗ",          [new(cost, 350), new(expenses, 10), new(reliability, 0.50)]),
+            new("BMW",          [new(cost, 500), new(expenses, 7), new(reliability, 0.85)]),
+            new("Nissan",       [new(cost, 350), new(expenses, 7), new(reliability, 0.80)]),
+            new("Hundaw",       [new(cost, 350), new(expenses, 7), new(reliability, 0.75)]),
+            new("ОКА",          [new(cost, 200), new(expenses, 15), new(reliability, 0.45)])
+    ];
+            return new(solution, inputs);
+        }
+
+        public static Pair<Variable, List<InputParam>> TestExam()
+        {
+            throw new NotImplementedException();
+        }
+
+        public static Pair<Variable, List<InputParam>> TestWater()
+        {
+            var liquidLevel = BaseRules.Obj().GetLinguisticVariable("Уровень жидкости") ?? throw new NullReferenceException("Заполните базу правил");
+            var liquidConsumption = BaseRules.Obj().GetLinguisticVariable("Расход жидкости") ?? throw new NullReferenceException("Заполните базу правил");
+            var liquidFlow = BaseRules.Obj().GetLinguisticVariable("Приток жидкости") ?? throw new NullReferenceException("Заполните базу правил");
+            List<InputParam> inputs = [
+                new("Первый способ", [new(liquidLevel, 2.5), new(liquidConsumption, 0.4)]),
+            ];
+            return new(liquidFlow, inputs);
+        }
+
+        public static Pair<Variable, List<InputParam>> TestWork()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}
