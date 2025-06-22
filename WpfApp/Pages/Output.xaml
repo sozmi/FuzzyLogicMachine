@@ -40,7 +40,7 @@
                                   SelectedItem="{Binding OutVar}"/>
                         <CheckBox Content="Выбирать макимальный"
                                   IsChecked="{Binding IsMax}">
-                            
+
                         </CheckBox>
                         <Button Content="Вычисление"
                                 Command="{Binding ActionEval}"
@@ -66,29 +66,27 @@
             </StackPanel>
 
         </ToolBar>
-        <StackPanel Orientation="Vertical">
-            <DataGrid DockPanel.Dock="Left"
+        <DataGrid DockPanel.Dock="Left"
            AutoGenerateColumns="False"
            CanUserReorderColumns="False"
            CanUserSortColumns="False"
            Style="{StaticResource BaseStyle}"
            DataContext="{Binding DGParams}"
            ItemsSource="{Binding Items}">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Наименование" 
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование" 
                              Binding="{Binding Name}">
-                    </DataGridTextColumn>
+                </DataGridTextColumn>
 
-                    <DataGridTemplateColumn Header="Переменные">
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <view:DG_InputParams/>
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
-                </DataGrid.Columns>
-            </DataGrid>
-        </StackPanel>
+                <DataGridTemplateColumn Header="Переменные">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <view:DG_InputParams/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
         <oxy:PlotView Model="{Binding PlotVM.PlotModel}" Margin="10"/>
     </DockPanel>
 </Page>
