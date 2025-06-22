@@ -132,7 +132,7 @@ namespace WpfApp.Classes
         public double Start { get; set; }
         public double End { get; set; }
         readonly double dx;
-        public AreaByIntervals(FunctionInfo functions, double a, double b, string title, double dx_ = 0.01)
+        public AreaByIntervals(FunctionInfo functions, double a, double b, string title, double dx_ = 0.001)
         {
             Start = a;
             End = b;

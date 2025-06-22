@@ -90,7 +90,7 @@ namespace ClassLibraryFLM.FuzzyLogic.Production
             Console.WriteLine("------------------------------------------------------");
         }
 
-        public double Evaluate(Variable target)
+        public double Evaluate(Variable target, out FunctionInfo func)
         {
             PrintInfo();
             Fuzzy();
@@ -102,7 +102,7 @@ namespace ClassLibraryFLM.FuzzyLogic.Production
             Activation();
 
             PrintInfo();
-            var func = Acсumulation(target.Name);
+            func = Acсumulation(target.Name);
 
             PrintInfo();
             return Unfuzzy(func, target);
@@ -218,7 +218,7 @@ namespace ClassLibraryFLM.FuzzyLogic.Production
             return s.TrimEnd('\n');
         }
 
-        internal void Clear()
+        public void Clear()
         {
             LinguisticVars.Clear();
             Rules.Clear();

@@ -16,7 +16,7 @@
     <Page.DataContext>
         <vmo:LinguisticViewModel/>
     </Page.DataContext>
-    
+
     <Page.Resources>
         <Style x:Key="WrappedColumnHeaderStyle" TargetType="{x:Type DataGridColumnHeader}">
             <Setter Property="ContentTemplate">
@@ -28,38 +28,54 @@
             </Setter>
         </Style>
     </Page.Resources>
-    
+
     <DockPanel>
         <ToolBar DockPanel.Dock="Top" 
              Padding="10" 
              HorizontalContentAlignment="Center" 
              VerticalContentAlignment="Center">
-            <GroupBox Header="Тестирование" 
+            <StackPanel Orientation="Horizontal">
+                <GroupBox Header="Подготовленные данные" 
+                    Style="{StaticResource GroupBoxTab.Small}">
+                    <h:UniformSpacingPanel Spacing="5">
+                        <Button Content="Подбор автомобиля"
+                                Command="{Binding ActionFillCar}"/>
+                        <Button Content="Вода"
+                                Command="{Binding ActionFillWater}"/>
+                        <Button Content="Экзамен"
+                                Command="{Binding ActionFillExam}"/>
+                        <Button Content="Работа"
+                                Command="{Binding ActionFillWork}"/>
+                    </h:UniformSpacingPanel>
+                </GroupBox>
+                <GroupBox Header="Тестирование" 
                       Style="{StaticResource GroupBoxTab.Small}">
-                <StackPanel Orientation="Horizontal">
-                    <Button Content="Вычисление"
-                            Command="{Binding ActionEval}"
-                            Style="{StaticResource ButtonPrimary}"/>
-                    <Button Content="Фаззификация"
+                    <h:UniformSpacingPanel Spacing="5">
+                        <Button Content="Фаззификация"
                             Command="{Binding ActionTestFuzzification}"/>
-                    <Button Content="Агрегирование"
+                        <Button Content="Агрегирование"
                             Command="{Binding ActionTestAggregation}"/>
-                    <Button Content="Активизация"
+                        <Button Content="Активизация"
                             Command="{Binding ActionTestActive}"/>
-                    <Button Content="Аккумуляция"
+                        <Button Content="Аккумуляция"
                             Command="{Binding ActionTestAccumulation}"/>
-                    <Button Content="Дефаззификация"
+                        <Button Content="Дефаззификация"
                             Command="{Binding ActionTestUnFuzzification}"/>
-                    <Button Content="Синтаксический анализатор"
+                        <Button Content="Синтаксический анализатор"
                             Command="{Binding ActionTestSyntaxAnalizer}"/>
-                </StackPanel>
-
-            </GroupBox>
+                    </h:UniformSpacingPanel>
+                </GroupBox>
+            </StackPanel>
         </ToolBar>
-        <StackPanel Orientation="Vertical">
-            <vo:DG_LinguisticVariables/>
-            <vo:DG_Rules/>
-        </StackPanel>
+
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical">
+
+                <vo:DG_LinguisticVariables/>
+                <vo:DG_Rules/>
+            </StackPanel>
+        </ScrollViewer>
+
         <oxy:PlotView Model="{Binding PlotVM.PlotModel}" 
           Margin="10">
         </oxy:PlotView>

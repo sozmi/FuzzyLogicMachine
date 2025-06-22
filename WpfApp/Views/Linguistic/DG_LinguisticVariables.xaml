@@ -29,8 +29,6 @@
         <DataGrid.Columns>
             <DataGridTextColumn Header="Наименование" 
                             Binding="{Binding Name}"/>
-            <DataGridTextColumn Header="Наименование" 
-                Binding="{Binding Value}"/>
             <DataGridTemplateColumn Header="Универсум">
                 <DataGridTemplateColumn.CellTemplate>
                     <DataTemplate>

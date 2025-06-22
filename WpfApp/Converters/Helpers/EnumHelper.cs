@@ -22,5 +22,10 @@ namespace WpfApp.Converters.Helpers
 
             return Enum.GetValues(t).Cast<Enum>().Select((e) => new Tuple<object, object>(e, e.Description())).ToList();
         }
+
+        public static object GetValue(Type t, string descr)
+        {
+            return Enum.GetValues(t).Cast<Enum>().Where(e => e.Description() == descr).FirstOrDefault() ?? throw new ArgumentException("Не найдено среди enum");
+        }
     }
 }

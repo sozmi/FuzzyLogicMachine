@@ -1,7 +1,4 @@
-﻿using OxyPlot.Series;
-using System.Reflection;
-using System.Text;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
 
 namespace WpfApp

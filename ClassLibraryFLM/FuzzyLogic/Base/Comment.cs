@@ -31,7 +31,7 @@ namespace ClassLibraryFLM.FuzzyLogic.Base
         public void Fuzzy()
         {
             if (Variable.Value == null)
-                throw new ArgumentNullException("Значение входной переменной не установлено");
+                throw new NullReferenceException("Значение входной переменной не установлено");
             Term.Fuzzy((double)Variable.Value);
         }
 

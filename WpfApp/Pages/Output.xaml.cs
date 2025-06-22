@@ -3,11 +3,11 @@
 namespace WpfApp.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Operations.xaml
+    /// Логика взаимодействия для InputParams.xaml
     /// </summary>
-    public partial class Linguistic : Page
+    public partial class Output : Page
     {
-        public Linguistic()
+        public Output()
         {
             InitializeComponent();
         }

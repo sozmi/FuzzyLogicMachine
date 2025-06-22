@@ -3,11 +3,11 @@
 namespace WpfApp.Views.Linguistic
 {
     /// <summary>
-    /// Логика взаимодействия для DG_Rules.xaml
+    /// Логика взаимодействия для DG_InputParams.xaml
     /// </summary>
-    public partial class DG_Rules : UserControl
+    public partial class DG_InputParams : UserControl
     {
-        public DG_Rules()
+        public DG_InputParams()
         {
             InitializeComponent();
         }

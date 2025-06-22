@@ -27,6 +27,9 @@
                 <Button Content="Лингвистические переменные" 
                         Tag="Linguistic.xaml" 
                         Click="Button_Click"/>
+                <Button Content="Вывод" 
+                        Tag="Output.xaml" 
+                        Click="Button_Click"/>
             </h:UniformSpacingPanel>
         </ToolBar>
 

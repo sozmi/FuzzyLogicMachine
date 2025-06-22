@@ -40,7 +40,7 @@
             </GroupBox>
 
             <GroupBox Header="Интервалы" Style="{StaticResource GroupBoxTab.Small}">
-                <StackPanel Orientation="Horizontal">
+                <h:UniformSpacingPanel Spacing="5">
                     <TextBox Margin="5" 
                      h:TitleElement.Title="От" 
                      Text="{Binding Start}" 
@@ -51,7 +51,7 @@
                      Text="{Binding End}" 
                      Style="{StaticResource TextBoxExtend}" 
                      h:TitleElement.TitlePlacement="Left"/>
-                </StackPanel>
+                </h:UniformSpacingPanel>
             </GroupBox>
 
             <GroupBox Header="Операции над нечеткими множествами" 
