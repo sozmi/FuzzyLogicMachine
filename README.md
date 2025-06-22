@@ -1,4 +1,5 @@
 # FLM
+Курсовая работа "Продукционная система с нечеткой логикой"
 ## Интерфейс программы
 ![image](https://github.com/user-attachments/assets/212e1f06-ee34-42d7-b143-58b644543d17)
 ![image](https://github.com/user-attachments/assets/f58bbb5d-3e6d-4e2d-a992-f419c995945b)
