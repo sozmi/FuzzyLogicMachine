@@ -1,5 +1,4 @@
-﻿using ClassLibraryFLM.FuzzyLogic;
-using ClassLibraryFLM.FuzzyLogic.Base;
+﻿using ClassLibraryFLM.FuzzyLogic.Base;
 using ClassLibraryFLM.FuzzyLogic.Production;
 
 namespace ClassLibraryFLM.Parser

@@ -1,4 +1,4 @@
-﻿namespace ClassLibraryFLM.FuzzyLogic.Production
+﻿namespace ClassLibraryFLM.FuzzyLogic.Test
 {
     public interface ITestList<T>
     {

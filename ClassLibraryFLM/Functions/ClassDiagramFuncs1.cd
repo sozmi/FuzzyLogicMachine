@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibraryFLM.Functions.FuncFabric">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAQAAAAAABAAAAAAAAAAAAAAAAAAAAMEACAgACQA=</HashCode>
+      <FileName>Functions\FuncFabric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.Functions.AreaFuncs">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Functions\FuncFabric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.Functions.ParamValue">
+    <Position X="8.5" Y="1.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAQAGAAgQAAAAAAAAAAAAgAAAABQA=</HashCode>
+      <FileName>Functions\FunctionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.Functions.FunctionInfo">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgIAABAAAAAgMAAAAAIgAAEAEAAAAAAAAQgiAAA=</HashCode>
+      <FileName>Functions\FunctionInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="TypeFunc" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Params" />
+      <Property Name="Functions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.Functions.FunctionRuleInfo">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Functions\FunctionRuleInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="ClassLibraryFLM.Functions.ETypeAreaFunc">
+    <Position X="1.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAARAQAAAAgAAAAAAEQAAAAA=</HashCode>
+      <FileName>Functions\ETypeAreaFunc.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ClassLibraryFLM.Functions.ETypeFunc">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAACAAAACAAAAAEHBAAE=</HashCode>
+      <FileName>Functions\ETypeFunc.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

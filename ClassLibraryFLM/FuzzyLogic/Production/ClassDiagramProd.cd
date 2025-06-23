@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Production.BaseRules">
+    <Position X="15.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAQAAAAAgIEAGCIAgQAAABAAAAAAAIQAEDAkQA=</HashCode>
+      <FileName>FuzzyLogic\Production\BaseRules.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="fuzzyComments" />
+      <Property Name="LinguisticVars" />
+      <Property Name="Rules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Production.OutputInfo">
+    <Position X="17.25" Y="4.25" Width="1.5" />
+    <AssociationLine Name="Best" Type="ClassLibraryFLM.FuzzyLogic.Base.InputParam" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="18.75" Y="5.062" />
+        <Point X="20.438" Y="5.062" />
+        <Point X="20.438" Y="4.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Production\Output.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Best" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Functions" />
+      <Field Name="Params" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Production.Output">
+    <Position X="17.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Production\Output.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Comment" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAIAAAAAAAAAEAQAAEAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Comment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Variable" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAACSAAUAEAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Variable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Rule" Collapsed="true">
+    <Position X="12" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAACAAAAEAACIAAAAAAAAABAgIAIAAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Rule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.InputParam" Collapsed="true">
+    <Position X="19.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>FuzzyLogic\Base\InputParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.Functions.FunctionInfo" Collapsed="true">
+    <Position X="19.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgIAABAAAAAgMAAAAAIgAAEAEAAAAAAAAQgiAAA=</HashCode>
+      <FileName>Functions\FunctionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

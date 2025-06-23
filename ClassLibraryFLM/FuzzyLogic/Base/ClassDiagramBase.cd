@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Comment">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <AssociationLine Name="EModificator" Type="ClassLibraryFLM.FuzzyLogic.Base.ETypeModificator" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="5.75" />
+        <Point X="6.75" Y="5.499" />
+        <Point X="6.75" Y="5.499" />
+        <Point X="6.75" Y="4.989" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAIAAAAAAAAAEAQAAEAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Comment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EModificator" />
+      <Property Name="Term" />
+      <Property Name="Variable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Condition">
+    <Position X="3.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEAECAAAAAAAAAAAAAAAIgAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Condition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Analizer" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="fuzzyComments" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.EnumExtensions">
+    <Position X="8" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\ETypeModificator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.InputParam">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAgAA=</HashCode>
+      <FileName>FuzzyLogic\Base\InputParam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Rule">
+    <Position X="3.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAACAAAAEAACIAAAAAAAAABAgIAIAAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Rule.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="OutVarFunction" />
+      <Property Name="Condition" />
+      <Property Name="Output" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Term">
+    <Position X="5.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAYEAAAAAAAAAAAgAEAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Term.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.FuzzyLogic.Base.Variable">
+    <Position X="8" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAACSAAUAEAAAAAAAABAgAAAAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\Variable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Terms" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLibraryFLM.Parser.SyntaxAnalizer" Collapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAggAIACQAAAAAACAAAAAECQAIAAAAgAAAAAEAAA=</HashCode>
+      <FileName>Parser\SyntaxAnalizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassLibraryFLM.Functions.FunctionInfo" Collapsed="true">
+    <Position X="3.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgIAABAAAAAgMAAAAAIgAAEAEAAAAAAAAQgiAAA=</HashCode>
+      <FileName>Functions\FunctionInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ClassLibraryFLM.FuzzyLogic.Base.ETypeModificator">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>FuzzyLogic\Base\ETypeModificator.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

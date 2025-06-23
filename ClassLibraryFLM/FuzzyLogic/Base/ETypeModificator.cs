@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace ClassLibraryFLM.FuzzyLogic
+namespace ClassLibraryFLM.FuzzyLogic.Base
 {
     public enum ETypeModificator
     {

@@ -1,6 +1,7 @@
 ﻿using ClassLibraryFLM.Base;
 using ClassLibraryFLM.FuzzyLogic.Base;
 using ClassLibraryFLM.FuzzyLogic.Production;
+using ClassLibraryFLM.FuzzyLogic.Test;
 using System.Runtime.Serialization;
 using System.Windows;
 using WpfApp.Classes;

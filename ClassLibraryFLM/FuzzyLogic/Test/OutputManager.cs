@@ -1,7 +1,8 @@
 ﻿using ClassLibraryFLM.Base;
 using ClassLibraryFLM.FuzzyLogic.Base;
+using ClassLibraryFLM.FuzzyLogic.Production;
 
-namespace ClassLibraryFLM.FuzzyLogic.Production
+namespace ClassLibraryFLM.FuzzyLogic.Test
 {
     /// <summary>
     /// Формирует массив входных переменных

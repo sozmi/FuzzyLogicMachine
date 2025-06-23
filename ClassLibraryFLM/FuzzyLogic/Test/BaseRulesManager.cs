@@ -1,7 +1,8 @@
 ﻿using ClassLibraryFLM.Functions;
 using ClassLibraryFLM.FuzzyLogic.Base;
+using ClassLibraryFLM.FuzzyLogic.Production;
 
-namespace ClassLibraryFLM.FuzzyLogic.Production
+namespace ClassLibraryFLM.FuzzyLogic.Test
 {
     /// <summary>
     /// Класс должен заполнить базу знаний

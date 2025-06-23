@@ -1,6 +1,7 @@
 ﻿using ClassLibraryFLM.Base;
 using ClassLibraryFLM.Functions;
 using ClassLibraryFLM.FuzzyLogic.Base;
+using ClassLibraryFLM.FuzzyLogic.Test;
 
 namespace ClassLibraryFLM.FuzzyLogic.Production
 {
