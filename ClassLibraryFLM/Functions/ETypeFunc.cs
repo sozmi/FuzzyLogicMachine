@@ -8,6 +8,8 @@ namespace ClassLibraryFLM.Functions
         None,
         [Description("Линейная")]
         Line,
+        [Description("Линейная убывающая")]
+        LineDecr,
         [Description("Треугольная")]
         Triangle,
         [Description("Трапецевидная")]

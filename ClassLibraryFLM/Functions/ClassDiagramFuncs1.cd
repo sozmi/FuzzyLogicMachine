@@ -3,7 +3,7 @@
   <Class Name="ClassLibraryFLM.Functions.FuncFabric">
     <Position X="1.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAEAAQAAAAAABAAAAAAAAAAAAAAAAAAAAMEACAgACQA=</HashCode>
+      <HashCode>AAEAAQAAAAAIBAAAAAAAAAAAAAAAAAAAAMEACAgACQA=</HashCode>
       <FileName>Functions\FuncFabric.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -47,7 +47,7 @@
     <TypeIdentifier />
   </Class>
   <Enum Name="ClassLibraryFLM.Functions.ETypeAreaFunc">
-    <Position X="1.25" Y="4.75" Width="1.5" />
+    <Position X="1.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAARAQAAAAgAAAAAAEQAAAAA=</HashCode>
       <FileName>Functions\ETypeAreaFunc.cs</FileName>
@@ -56,7 +56,7 @@
   <Enum Name="ClassLibraryFLM.Functions.ETypeFunc">
     <Position X="3.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAACAAAACAAAAAEHBAAE=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAACAAAICAAAAAEHBAAE=</HashCode>
       <FileName>Functions\ETypeFunc.cs</FileName>
     </TypeIdentifier>
   </Enum>

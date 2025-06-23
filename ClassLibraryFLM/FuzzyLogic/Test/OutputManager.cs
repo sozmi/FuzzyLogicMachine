@@ -16,13 +16,13 @@ namespace ClassLibraryFLM.FuzzyLogic.Test
             Variable reliability = BaseRules.Obj().GetLinguisticVariable("Надежность") ?? throw new NullReferenceException("Заполните базу правил");
             Variable solution = BaseRules.Obj().GetLinguisticVariable("Решение") ?? throw new NullReferenceException("Заполните базу правил");
             List<InputParam> inputs = [
-            new("Toyota Yaris", [new(cost, 350), new(expenses, 5), new(reliability, 0.90)]),
-            new("ВАЗ",          [new(cost, 350), new(expenses, 10), new(reliability, 0.50)]),
-            new("BMW",          [new(cost, 500), new(expenses, 7), new(reliability, 0.85)]),
-            new("Nissan",       [new(cost, 350), new(expenses, 7), new(reliability, 0.80)]),
-            new("Hundaw",       [new(cost, 350), new(expenses, 7), new(reliability, 0.75)]),
-            new("ОКА",          [new(cost, 200), new(expenses, 15), new(reliability, 0.45)])
-    ];
+                 new("Toyota Yaris", [new(cost, 350), new(expenses, 5), new(reliability, 0.90)]),
+                 new("ВАЗ",          [new(cost, 350), new(expenses, 10), new(reliability, 0.50)]),
+                 new("BMW",          [new(cost, 500), new(expenses, 7), new(reliability, 0.85)]),
+                 new("Nissan",       [new(cost, 350), new(expenses, 7), new(reliability, 0.80)]),
+                 new("Hundaw",       [new(cost, 350), new(expenses, 7), new(reliability, 0.75)]),
+                 new("ОКА",          [new(cost, 200), new(expenses, 15), new(reliability, 0.45)])
+            ];
             return new(solution, inputs);
         }
 
@@ -44,7 +44,18 @@ namespace ClassLibraryFLM.FuzzyLogic.Test
 
         public static Pair<Variable, List<InputParam>> TestWork()
         {
-            throw new NotImplementedException();
+            Variable salary = BaseRules.Obj().GetLinguisticVariable("Зарплата") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable distance = BaseRules.Obj().GetLinguisticVariable("Работники на удалёнке") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable rating = BaseRules.Obj().GetLinguisticVariable("Рейтинг (отзывы)") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable descision = BaseRules.Obj().GetLinguisticVariable("Решение") ?? throw new NullReferenceException("Заполните базу правил");
+            List<InputParam> inputs = [
+                new("RusBitTech", [new(salary, 50), new(distance, 7), new(rating, 0.90)]),
+                new("CPS",          [new(salary, 30), new(distance, 6), new(rating, 0.55)]),
+                new("Axenix",          [new(salary, 50), new(distance, 15), new(rating, 0.75)]),
+                new("NII",       [new(salary, 20), new(distance, 9), new(rating, 0.65)]),
+                new("Private Company",       [new(salary, 60), new(distance, 11), new(rating, 0.45)])
+                ];
+            return new(descision, inputs);
         }
     }
 }

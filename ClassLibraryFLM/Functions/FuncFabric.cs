@@ -20,6 +20,25 @@ namespace ClassLibraryFLM.Functions
             ];
             return info;
         }
+        public static FunctionInfo GetLineDecr(double a, double b, params string[] names)
+        {
+            if (names.Length == 0)
+            {
+                var parameters = MethodBase.GetCurrentMethod()?.GetParameters() ?? throw new Exception("Магия");
+                names = GetNamesParam(parameters);
+            }
+            List<Guid> vars = [];
+            FunctionInfo info = new(ETypeFunc.LineDecr, names, out vars, a, b);
+            Guid ka = vars[0];
+            Guid kb = vars[1];
+            info.Functions =
+            [
+                new FunctionRuleInfo(x => x<=info.Params[ka], x => 1),
+                new FunctionRuleInfo(x => info.Params[ka]<x && x <= info.Params[kb], x => (info.Params[kb] - x)/(info.Params[kb]-info.Params[ka] )),
+                new FunctionRuleInfo(x => x>=info.Params[kb].Value, x => 0),
+            ];
+            return info;
+        }
         public static FunctionInfo GetTrapetial(double a, double b, double c, double d, params string[] names)
         {
             if (names.Length == 0)
@@ -58,6 +77,7 @@ namespace ClassLibraryFLM.Functions
             ];
             return info;
         }
+
         public static FunctionInfo GetZ(double a, double b, params string[] names)
         {
             if (names.Length == 0)
@@ -120,7 +140,7 @@ namespace ClassLibraryFLM.Functions
             for (int i = 0; i < names.Length; i++)
             {
                 string? name = parameters[i].Name;
-                if(name != null)
+                if (name != null)
                     names[i] = name;
             }
 
@@ -170,6 +190,7 @@ namespace ClassLibraryFLM.Functions
                 ETypeFunc.Z => GetZ(5, 10),
                 ETypeFunc.P => GetP(2, 5, 10, 15),
                 ETypeFunc.Line => GetLine(0.5),
+                ETypeFunc.LineDecr => GetLineDecr(3, 8),
                 _ => new(ETypeFunc.None),
             };
         }
