@@ -20,7 +20,8 @@ namespace ClassLibraryFLM.FuzzyLogic.Base
                 Output = BaseRules.Obj().GetOrCreateFuzzyComment(vars.First());
                 return;
             }
-            throw new ArgumentException("Не найдено заключение для правила");
+            if (condition.Length > 0 && condition.Length>0)
+                throw new ArgumentException("Не найдено заключение для правила");
         }
         public Rule(Condition condition, Comment output)
         {
