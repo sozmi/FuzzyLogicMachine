@@ -28,7 +28,18 @@ namespace ClassLibraryFLM.FuzzyLogic.Test
 
         public static Pair<Variable, List<InputParam>> TestExam()
         {
-            throw new NotImplementedException();
+            Variable difficultyLevel = BaseRules.Obj().GetLinguisticVariable("Сложность") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable preparationTime = BaseRules.Obj().GetLinguisticVariable("Время подготовки") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable cheatOpportunity = BaseRules.Obj().GetLinguisticVariable("Возможность списать") ?? throw new NullReferenceException("Заполните базу правил");
+            Variable successChance = BaseRules.Obj().GetLinguisticVariable("Вероятность сдачи") ?? throw new NullReferenceException("Заполните базу правил");
+            List<InputParam> inputs = [
+                 new("Новые технологии в РПС", [new(difficultyLevel, 3), new(preparationTime, 5), new(cheatOpportunity, 8)]),
+                 new("Интеллектальные информационные системы",          [new(difficultyLevel, 10), new(preparationTime, 2), new(cheatOpportunity, 4)]),
+                 new("Моделирование",          [new(difficultyLevel, 6), new(preparationTime, 7), new(cheatOpportunity, 2)]),
+                 new("Интеллектуальный анализ данных",       [new(difficultyLevel, 5), new(preparationTime, 3), new(cheatOpportunity, 4)]),
+                 new("Английский язык",       [new(difficultyLevel, 1), new(preparationTime, 9), new(cheatOpportunity, 2)]),
+            ];
+            return new(successChance, inputs);
         }
 
         public static Pair<Variable, List<InputParam>> TestWater()
